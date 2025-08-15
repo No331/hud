@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 2%;
+  left: 1.5%;
+  font-family: sans-serif;
+}
+
+.hud-container {
+  display: flex;
+  gap: 0.5px;
+  align-items: center;
+}
+
+.bar {
+  width: 135px;
+  height: 10px;
+  background-color:#1f996425;
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
+
+  width: 135px;
+  height: 10px;
+  background-color: rgba(0, 128, 255, 0.116);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  
+  box-shadow: 0 0 4px rgba(34, 34, 34, 0.5)
+}
+
+.fill {
+  height: 100%;
+  width: 100%;
+  transition: width 0.2s ease-in-out;
+}
+
+.health .fill {
+  background-color: #209764; /* vert semi-transparent */
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.armor .fill {
+  background-color: rgba(0, 128, 255, 0.75); /* bleu semi-transparent */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
