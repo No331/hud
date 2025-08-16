@@ -42,21 +42,15 @@ body {
 }
 
 .icon {
-  font-size: 24px;
   width: 28px;
   height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  object-fit: contain;
 }
 
-.health-icon {
-  color: #ffffff;
-}
-
+.health-icon,
 .armor-icon {
-  color: #ffffff;
+  filter: brightness(0) saturate(100%) invert(100%) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .bar {
