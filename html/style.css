@@ -21,14 +21,30 @@ body {
 .health-section,
 .armor-section {
   display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.health-top,
+.armor-top {
+  display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+  height: 30px;
+}
+
+.health-top {
+  justify-content: flex-start;
+}
+
+.armor-top {
+  justify-content: flex-end;
 }
 
 .icon {
-  font-size: 20px;
-  width: 24px;
-  height: 24px;
+  font-size: 24px;
+  width: 28px;
+  height: 28px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,17 +52,11 @@ body {
 }
 
 .health-icon {
-  color: #ff4757;
+  color: #ffffff;
 }
 
 .armor-icon {
-  color: #3742fa;
-}
-
-.bar-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  color: #ffffff;
 }
 
 .bar {
